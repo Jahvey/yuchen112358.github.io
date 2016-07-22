@@ -1,9 +1,6 @@
-# HuxBlog Boilerplate
+#YuChen
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
 
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
+This is the Jekyll source for YuChen's blog and website, [YuChen](http://yuchen112358.github.io/). The design and layout of this site are from [Hux Blog](http://huangxuan.me/).You can visit the [Hux blog 模板](https://github.com/Huxpro/huxblog-boilerplate/blob/master/README.zh.md) for study.
 
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
-
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
+Copyright &copy; 2016 yuchen. Rights reserved as Hux indicated.
