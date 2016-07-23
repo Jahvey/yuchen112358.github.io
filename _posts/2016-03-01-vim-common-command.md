@@ -2,7 +2,7 @@
 layout:     post
 title:      "VIM常用命令"
 subtitle:   " \"VIM, Writing\""
-date:       2016-03-01 12:00:00
+date:       2012-8-06
 author:     "hzmook"
 header-img: "img/post-bg-2015.jpg"
 tags:
