@@ -4,7 +4,7 @@ title:      "Linux命令学习(2)"
 subtitle:   " \"Linux command\""
 date:       2016-07-20
 author:     "yuchen"
-header-img: "img/post-bg-odrid.jpg"
+header-img: "img/post-bg-odroid.jpg"
 tags:
     - Linux
 ---
