@@ -12,38 +12,50 @@ tags:
 ```Bash
 tar zxvf 文件名.tar.gz
 ```
+
 ##### 2. 压缩：
 ```Bash
 tar zcvf 文件名.tar.gz 目标名
 ```
+
 ##### 3. 求某个文件的sha值：
 ```Bash
 sha256sum odroid-xu3.tar.gz
 ```
+
 ##### 4. 比对：
 ```Bash
 sha256sum 文件名
 ```
+
 ##### 5. 查看文件大小（目录下所有文件）：
 ```Bash
 du -sh
 ```
+
 ##### 6. 查看磁盘情况：
 ```Bash
 df -hl
 ```
+
 ##### 7. 查看System.map中的符号信息的方法如下：
+
 ###### 第一种方法
+
 ```Bash
 sudo cat /boot/System.map-$(uname -r) | grep "vmap_area_list"
 ```
+
 ###### 第二种方法
+
 ```Bash
 cd /proc
 sudo cat kallsyms | grep "vmap_area_list"
 ```
-==注意，在第二种方法中若是不加上sudo，输出的地址将全是0。==
+**注意，在第二种方法中若是不加上sudo，输出的地址将全是0。**
+
 ##### 8.在内核编程中，要多使用list_for_each、list_for_each_entry等宏，它们都定义在内核链表表头中，在src/include/linux/list.h中，源码（2.6.24版本）如下：
+
 
 ```C
 #ifndef _LINUX_LIST_H
