@@ -23,15 +23,21 @@
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- add android syntax highlight -->
-    <link rel="stylesheet" href="/css/androidstudio.css">
-    <script type="text/javascript" src="/js/highlight.pack.js"></script>
+    
+    <!-- add android syntax highlight (1) -->
+    <link rel="stylesheet" href="/css/androidstudio-as.css">
+    <script type="text/javascript" src="/js/highlight.pack-as.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+<!--    带行号的代码显示,此处与上面(1)相辅相成，才能正常显示行号及代码高亮正确-->
+    <link rel="stylesheet" href="/css/androidstudio-ln.css">
+    <script type="text/javascript" src="/js/highlight.pack-ln.js"></script>
     <script>
       hljs.tabReplace = '    ';
       hljs.lineNodes = true;
       hljs.initHighlightingOnLoad();
-    </script>
+    </script>    
     
+<!--    prism格式代码显示-->
 <!--
     <link rel="stylesheet" href="/css/prism.css" data-noprefix />
     <script src="/js/prism.js"></script>
