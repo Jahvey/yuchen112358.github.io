@@ -1,114 +1,94 @@
 /*
-Date: 24 Fev 2015
-Author: Pedro Oliveira <kanytu@gmail pre . com>
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
 */
 
 pre code {
-  display: block;padding: 0 .5em;
-  background: #282b2e;color: #a9b7c6;
+  display: block; padding: 0.5em;
+  background: #fdf6e3; color: #657b83;
 }
 
-pre .number,
-pre .symbol {
-  color: #6897BB;
-}
-
-pre .keyword,
-pre .deletion {
-  color: #cc7832;
-}
-
-pre .variable {
-  color: #629755;
-}
-
-pre .comment {
-  color: #808080;
-}
-
-pre .string,
-pre .attribute,
-pre .addition {
-  color: #6A8759;
-}
-
+pre .comment,
 pre .template_comment,
 pre .diff .header,
 pre .doctype,
+pre .pi,
 pre .lisp .string,
 pre .javadoc {
-  color: #808080;
+  color: #93a1a1;
+  font-style: italic;
 }
 
-pre .css .rule .keyword,
+pre .keyword,
 pre .winutils,
-pre .javascript .title,
 pre .method,
+pre .addition,
 pre .css .tag,
-pre .clojure .title,
+pre .request,
+pre .status,
 pre .nginx .title {
-  color: #cc7832;
+  color: #859900;
 }
 
+pre .number,
 pre .command,
+pre .string,
 pre .tag .value,
+pre .rules .value,
 pre .phpdoc,
 pre .tex .formula,
 pre .regexp,
 pre .hexcolor {
-  color: #468966;
+  color: #2aa198;
 }
 
 pre .title,
 pre .localvars,
-pre .function .title,
 pre .chunk,
 pre .decorator,
 pre .built_in,
-pre .lisp .title,
-pre .clojure .built_in,
 pre .identifier,
-pre .id {
-  color: #FFB03B;
+pre .vhdl .literal,
+pre .id,
+pre .css .function {
+  color: #268bd2;
 }
 
+pre .attribute,
+pre .variable,
 pre .lisp .body,
 pre .smalltalk .number,
 pre .constant,
 pre .class .title,
 pre .parent,
 pre .haskell .type {
-  color: #ffc66d;
-}
-
-pre .css .attribute {
-  color: #b89859;
-}
-
-pre .css .number,pre .css .hexcolor{
-  color: #DCCF8F;
-}
-
-pre .css .class {
-  color: #d3a60c;
+  color: #b58900;
 }
 
 pre .preprocessor,
+pre .preprocessor .keyword,
 pre .pragma,
-pre .pi,
 pre .shebang,
+pre .symbol,
 pre .symbol .string,
 pre .diff .change,
 pre .special,
 pre .attr_selector,
 pre .important,
 pre .subst,
-pre .cdata {
+pre .cdata,
+pre .clojure .title,
+pre .css .pseudo {
   color: #cb4b16;
 }
 
+pre .deletion {
+  color: #dc322f;
+}
+
 pre .tex .formula {
-  background: #073642;
+  background: #eee8d5;
 }
 
 pre {
@@ -130,3 +110,5 @@ pre .line::before {
   padding-right: 0.5em; margin-right: 0.5em;
   color: #BBB; border-right: solid 1px;
 }
+
+
