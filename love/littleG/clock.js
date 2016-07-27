@@ -14,6 +14,6 @@ hrsold=Math.floor(e_hrsold);
 e_minsold=(e_hrsold-hrsold)*60; 
 minsold=Math.floor((e_hrsold-hrsold)*60); 
 seconds=Math.floor((e_minsold-minsold)*60); 
-	htright.innerHTML='<font  color=#00ffff>¾àÎÒÃÇÏàÁµµÄÈÕ×ÓÒÑÓĞ '+daysold+'Ìì '+hrsold+'Ğ¡Ê±'+minsold+'·Ö'+seconds+'Ãë</font><DIV style="DISPLAY: none"><script src="http://s9.cnzz.com/z_stat.php?id=1253206362&web_id=1253206362" language="JavaScript"></script><script language="javascript" type="text/javascript" src="http://js.users.51.la/17292473.js"></script>';
+	htright.innerHTML='<font  color=#00ffff>è·æˆ‘ä»¬ç›¸æ‹çš„æ—¥å­å·²æœ‰ '+daysold+'å¤© '+hrsold+'å°æ—¶'+minsold+'åˆ†'+seconds+'ç§’</font><DIV style="DISPLAY: none"><script src="http://s9.cnzz.com/z_stat.php?id=1253206362&web_id=1253206362" language="JavaScript"></script><script language="javascript" type="text/javascript" src="http://js.users.51.la/17292473.js"></script>';
 	} 
 show_student_time(); 

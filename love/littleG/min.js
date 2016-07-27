@@ -16,15 +16,15 @@ sc();
 }
 document.onmousedown=sc
 document.ondblclick=initialize
-function getUrlParam1(name){nk="Ç×°®µÄĞ¡¹ÃÄï";
+function getUrlParam1(name){nk="äº²çˆ±çš„å°å§‘å¨˜";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);return nk;}  
-function getUrlParam3(name){nk="Ï£ÍûÄãÃ¿Ìì¶¼ÄÜ¿ªĞÄĞÒ¸££¬Ï£ÍûÃ¿Ìì¶¼ÊÇÎÒÃÇµÄÇéÈË½Ú£¡";
+function getUrlParam3(name){nk="å¸Œæœ›ä½ æ¯å¤©éƒ½èƒ½å¼€å¿ƒå¹¸ç¦ï¼Œå¸Œæœ›æ¯å¤©éƒ½æ˜¯æˆ‘ä»¬çš„æƒ…äººèŠ‚ï¼";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);return nk;}  
-function getUrlParam2(name){nk="Ğ¡Ñ§Éú";
+function getUrlParam2(name){nk="å°å­¦ç”Ÿ";
 var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
 var r=window.location.search.substr(1).match(reg);
 if (r!=null) return unescape(r[2]);return nk;
