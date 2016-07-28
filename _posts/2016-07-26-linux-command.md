@@ -119,10 +119,10 @@ gzip [选项] 压缩（解压缩）的文件名该命令的各选项含义如下
 
 ##### 1.3 gzip指令实例：   
 
-* gzip *% 把当前目录下的每个文件压缩成 .gz 文件。
-* gzip -dv *% 把当前目录下每个压缩的文件解压，并列出详细的信息。
-* gzip -l *% 详细显示例1中每个压缩的文件的信息，并不解压。
-* gzip usr.tar% 压缩 tar 备份文件 usr.tar，此时压缩文件的扩展名为.tar.gz。  
+* gzip *       #把当前目录下的每个文件压缩成 .gz 文件。
+* gzip -dv *   #把当前目录下每个压缩的文件解压，并列出详细的信息。
+* gzip -l *    #详细显示例1中每个压缩的文件的信息，并不解压。
+* gzip usr.tar #压缩 tar 备份文件 usr.tar，此时压缩文件的扩展名为.tar.gz。  
 
 ### 二. 求某个文件的SHA256(256-bit) 校验和：
 
@@ -228,6 +228,8 @@ $ sudo dpkg -i {downloaded.deb file}
 ```bash
 $ sudo apt-get -f install
 ```
+
+然后重新运行`$ sudo dpkg -i {downloaded.deb file}`命令，安装所需deb包。
 
 4） 更新默认Java 版本(可选)
 
