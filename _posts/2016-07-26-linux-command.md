@@ -144,7 +144,7 @@ sha256sum -c gpslogger-78.zip.SHA256
 * 验证完整性和签名的命令如下：
 
 ```bash
-$ gpg --verify ~/Downloads/gpslogger-71.apk.asc
+gpg --verify ~/Downloads/gpslogger-71.apk.asc
 ```
 
 ### 四. 查看文件大小（目录下所有文件）：
@@ -219,23 +219,23 @@ dpkg –configure package	配置包
 3）安装deb软件包
 
 ```bash
-$ sudo apt-get update
+sudo apt-get update
 #安装所下载的三个deb软件包
-$ sudo dpkg -i {downloaded.deb file}
+sudo dpkg -i {downloaded.deb file}
 ```
 **注意:**使用dpkg命令安装软件时，可能会因为缺少依赖而出现错误，此时只需运行如下命令(安装出错之后运行)：
 
 ```bash
-$ sudo apt-get -f install
+sudo apt-get -f install
 ```
 
-然后重新运行`$ sudo dpkg -i {downloaded.deb file}`命令，安装所需deb包。
+然后重新运行`sudo dpkg -i {downloaded.deb file}`命令，安装所需deb包。
 
 4） 更新默认Java 版本(可选)
 
 ```bash
-$ sudo update-alternatives --config java
-$ sudo update-alternatives --config javac
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
 ```
 
 ##### 7.2 使用apt安装和卸载软件
@@ -293,21 +293,30 @@ apt-cache search softname1 softname2 softname3……
 1)使用apt命令安装
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install openjdk-8-jdk
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
 ```
 
 2）更新默认Java 版本(可选)
 
 ```bash
-$ sudo update-alternatives --config java
-$ sudo update-alternatives --config javac
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
 ```
 
+### 八.解决Read only file system on Android问题
 
+1）Simply change ro to rw and add the remount option（root权限）
 
+```bash
+mount -o rw,remount /system
+```
 
+2)Once you are done making changes, you should remount with the original readonly（root权限）.
 
+```bash
+mount -o ro,remount /system
+```
 
 
 
