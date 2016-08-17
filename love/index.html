@@ -16,6 +16,7 @@
 <script type="text/javascript" src="js/min.js"></script>
   
 <style type="text/css">
+/*鼠标上移放大图片*/
 .dynamic {
 	width: 900px;
 	margin: 40px auto 0
@@ -41,7 +42,7 @@ li img:hover {
 	transform: scale(1.05);
 	box-shadow: 0px 0px 18px rgba(0,0,0,.5);
 }
-
+/*浮起来的相框*/
 a{
     color:#000;
     text-decoration:none;
@@ -144,6 +145,7 @@ $(function(){
           <p>
           <a href="#" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="images/love.JPG" width = "300" height = "400" alt="小姑娘" title="小姑娘和小学生要幸福的在一起O(∩_∩)O~"/></a>
           </p>
+<!--显示浮起的相框，与上面的相结合才能显示浮动的相框-->
           <div id="light" class="white_content">
 			<img src="images/love.JPG"/> 
 			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close
