@@ -14,6 +14,70 @@
 <script type="text/javascript" src="js/garden.js" ></script>
 <script type="text/javascript" src="js/functions.js" ></script>
 <script type="text/javascript" src="js/min.js"></script>
+  
+<style type="text/css">
+.dynamic {
+	width: 900px;
+	margin: 40px auto 0
+}
+li {
+	width: 300px;
+	height: 400px;
+	float: left;
+	list-style: none
+}
+li img {
+	display: block;
+	width: 300px;
+	height: 400px;
+	padding: 8px;
+	background-color: #FFF;
+	box-shadow: 0px 0px 18px rgba(0,0,0,.4);
+	-webkit-transition: all ease .3s;
+	transition: all ease .3s
+}
+li img:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+	box-shadow: 0px 0px 18px rgba(0,0,0,.5);
+}
+
+a{
+    color:#000;
+    text-decoration:none;
+    font-size:16px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.img{
+    border:0px;
+}
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 320px;
+    height: 420px;
+    border: 16px solid #FFF;
+    border-bottom:none;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+</style>
 </head>
 
 <body>
@@ -73,7 +137,23 @@ $(function(){
 <table border="0" cellspacing="8" cellpadding="16">
   <tr>
     <td><img border=0></td>
-    <td><img src="images/love.JPG" width = "300" height = "400" alt="小姑娘" align="center" title="我最爱的小姑娘" /></td>
+    <td>
+      <div class="dynamic">
+      <ul>
+        <li>
+          <p>
+          <a href="#" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="images/love.JPG" width = "300" height = "400" alt="小姑娘" title="小姑娘和小学生要幸福的在一起O(∩_∩)O~"/></a>
+          </p>
+          <div id="light" class="white_content">
+			<img src="images/love.JPG"/> 
+			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close
+			</a>
+		  </div>
+		  <div id="fade" class="black_overlay">
+		  </div>
+        </li>
+      </ul>
+    </td>
   </tr>
 </table>
 </div>
@@ -133,5 +213,10 @@ $("#code").typewriter();
 
 <br> 
 <!--<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#119;&#122;&#122;&#106;&#117;&#064;&#109;&#097;&#105;&#108;&#046;&#117;&#115;&#116;&#099;&#046;&#101;&#100;&#117;&#046;&#099;&#110;">制作人:雨辰</a>-->
+<!--小圆图，鼠标停留旋转-->
+<div class="zzsc">
+</div>
+<div style="text-align:center;clear:both;">
+</div>
 </body>
 </html>
