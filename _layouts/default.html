@@ -12,6 +12,7 @@
 
     {% include footer.html %}
 <!--    回顶部代码-->
+<!--
 <script type="text/javascript" src="/js/jquery.easing.js"></script>
     <script type="text/javascript">
 		var mv_dynamic_to_top = {
@@ -31,7 +32,14 @@
     <script type="text/javascript">
 		$('#' + mv_dynamic_to_top.id).attr('title', mv_dynamic_to_top.text);
     </script>
-
+-->
+<!--回顶部/底部代码-->
+<div id="shangxia">
+  <div id="shang" title="↑ 返回顶部"></div>
+  <div id="comt" title="查看评论"></div>
+  <div id="xia" title="↓ 移至底部"></div>
+  <div id="myrss" title="Hi!欢迎访问王震的博客O(∩_∩)O~" onclick="window.location.href='http://www.wzzju.top/'"></div>
+</div>
 <!-- Image to hack wechat -->
 <img src="/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
