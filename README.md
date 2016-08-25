@@ -6,4 +6,5 @@ This is the Jekyll source for YuChen's blog and website, [YuChen](http://yuchen1
 Copyright &copy; 2016 yuchen. Rights reserved as Hux indicated.
 
 开启jekyll本地服务：`jekyll serve --watch`
-本地浏览：http://localhost:4000
+本地浏览：http://localhost:4000  
+
