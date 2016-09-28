@@ -22,7 +22,7 @@ tags:
 <body class="markdown solarized-light">
 
   <h2 id="java编程思想（第四版）学习笔记"><a name="java编程思想（第四版）学习笔记" href="#java编程思想（第四版）学习笔记"></a>Java编程思想（第四版）学习笔记</h2><h4 id="by-王震"><a name="by-王震" href="#by-王震"></a>By 王震 <a href="mailto:wzzju@mail.ustc.edu.cn">wzzju@mail.ustc.edu.cn</a></h4><hr class="page"><h3 id="第二章-一切都是对象"><a name="第二章-一切都是对象" href="#第二章-一切都是对象"></a>第二章 一切都是对象</h3><p>1.遥控器（引用）和电视机（对象）</p><p>2.安全做法：创建一个引用的同时便进行初始化。如：<code>String str = "asdf"</code>
-或<code>String str=new String("asdf");</code>。</p><p>3.Java中，对象引用存储在堆栈（stack）中，但是Java对象并不存储于其中。</p><p>4.堆（heap）用于存放所有的Java对象。</p><p>5.stack和heap都位于RAM区。</p><p>6.常量存储在代码内部。</p><p>7.特例：基本类型不用new来创建变量，而是创建一个并非是引用的“自动”变量，这个变量直接存储“值”，并置于堆栈中（这样会更加高效）。</p><p>8.Java的基本类型：</p><table>
+或<code>String str=new String("asdf");</code>。</p><p>3.Java中，对象引用存储在栈（stack）中，但是Java对象并不存储于其中。</p><p>4.堆（heap）用于存放所有的Java对象。</p><p>5.stack和heap都位于RAM区。</p><p>6.常量存储在代码内部。</p><p>7.特例：基本类型不用new来创建变量，而是创建一个并非是引用的“自动”变量，这个变量直接存储“值”，并置于栈中（这样会更加高效）。</p><p>8.Java的基本类型：</p><table>
 <thead>
 <tr>
 <th style="text-align:left">基本类型</th>
@@ -78,7 +78,7 @@ tags:
 </tr>
 </tbody>
 </table><p>9.所有数值类型都有正负号，故不要去寻找无符号的数值类型。
-注意：byte的取值为<code>Unicode 0</code>到<code>Unicode 2^16^-1</code>。</p><p>10.boolean类型所占存储空间的大小没有明确指定，仅定义为能够取字面值true或false。</p><p>11.基本类型具有的包装器类，使得可以在堆中创建一个非基本对象，用来表示对应的基本类型。</p><p>12.Java提供了两个用于高精度计算的类：BigInteger和BigDecimal。虽然它们大体上属于“包装器类”的范畴，但是二者都没有对应的基本类型。必须以方法调用方式取代运算符方式来实现运算操作<strong class="highlight">（能用作于int或float的操作，也同样能作用于BigInteger或BigDecimal）</strong>，运算速度较慢，即以速度换取精度。BigInteger支持任意精度的整数，BigDecimal支持任意精度的定点数。</p><p>13.Java确保数组会被初始化，而且不能在它的范围之外被访问。当创建一个数组对象时，实际上就是创建了一个引用数组，并且每一个引用都会自动被初始化为null。一旦Java看到null，就知道这个引用还没有被指向某个对象。在使用任何引用前，必须为其指定一个对象；如果试图使用一个还是null的引用，在运行时将会报错。</p><blockquote>
+注意：char的取值为<code>Unicode 0</code>到<code>Unicode 2^16^-1</code>。</p><p>10.boolean类型所占存储空间的大小没有明确指定，仅定义为能够取字面值true或false。</p><p>11.基本类型具有的包装器类，使得可以在堆中创建一个非基本对象，用来表示对应的基本类型。</p><p>12.Java提供了两个用于高精度计算的类：BigInteger和BigDecimal。虽然它们大体上属于“包装器类”的范畴，但是二者都没有对应的基本类型。必须以方法调用方式取代运算符方式来实现运算操作<strong class="highlight">（能用作于int或float的操作，也同样能作用于BigInteger或BigDecimal）</strong>，运算速度较慢，即以速度换取精度。BigInteger支持任意精度的整数，BigDecimal支持任意精度的定点数。</p><p>13.Java确保数组会被初始化，而且不能在它的范围之外被访问。当创建一个数组对象时，实际上就是创建了一个引用数组，并且每一个引用都会自动被初始化为null。一旦Java看到null，就知道这个引用还没有被指向某个对象。在使用任何引用前，必须为其指定一个对象；如果试图使用一个还是null的引用，在运行时将会报错。</p><blockquote>
 <p>Java还可以创建用来存放基本数据类型的数组。同样，编译器也能确保这种数组的初始化，因为它会将这种数组所占的内存全部置零。</p>
 </blockquote><p>14.在C和C++中下述代码合法，但是在Java中却不能这样写：</p><pre><code class="java hljs" data-origin="&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;{
     int x = 12;
