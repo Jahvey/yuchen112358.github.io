@@ -17,7 +17,7 @@ tags:
 
 **注意：**代码若未指明位置则默认在drivers/cpufreq/cpufreq_interactive.c中。
 
-## 详细分析cpufreq_governor_interactive函数
+## 详细分析cpufreq_governor_interactive函数(续)
 
 ###### CPU负载的计算
 
