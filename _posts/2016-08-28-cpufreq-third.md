@@ -2,7 +2,7 @@
 layout:     post
 title:      "Android CPU动态调频(下)"
 subtitle:   "interactive governor源码分析"
-date:       2016-08-26
+date:       2016-08-28
 author:     "yuchen"
 header-img: "img/post-bg-java.jpg"
 tags:
